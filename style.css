@@ -1,0 +1,148 @@
+*{
+    /* font-family: Arial, Helvetica, sans-serif; */
+    margin: 0;
+    padding:0;
+}
+
+.logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 2px solid red;
+    border-radius: 80px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 70%;
+    background-color: rgb(6, 83, 83);
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    color: white;
+    list-style: none;
+    padding: 23px;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: red;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rightNav{
+    background-color: lightcyan;
+    text-align: right;
+    width: 40%;
+    /* padding:0 5rem; */
+}
+.rightNav button{
+    font-size: 1.2rem;
+}
+.rightNav .btn{
+    margin: 1rem;
+    background-color: green;
+}
+
+#search{
+    background-color: pink;
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHCoKReEWUGvg_qs9gSMk2NcpPrspqY1HQFcgUxSXjJIZjshDNAj1Bue3JjXhU95wufno&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-blend-mode: rgb(23, 23, 23); */
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    font-size: large;
+    font-style: bold;
+    max-width: 50%;
+    margin: auto; 
+    height: 80%;
+
+}
+
+.firstHalf{ 
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.secondHalf{
+    width: 30%;
+}
+
+.secondHalf img{
+    width: 70%;
+    border: 4px solid red;
+    border-radius: 150px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-weight: bolder;
+    font-size: 39px;
+    color: red;
+}
+.text-small{
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+.btn{
+    padding: 8px 20px;
+    margin: 7px 0;
+
+    border-radius: 8px;
+    background: aliceblue;
+    color: rgb(5, 5, 51);
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: aqua;
+}
+
+.copyright{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}

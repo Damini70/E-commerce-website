@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<style>
+     *{
+
+    margin: 0;
+    padding:0;
+}
+    .awards{
+        margin: 2rem;
+        margin-left: 7rem;
+    }
+    .products table{
+        border-spacing: 2rem;
+    }
+    .products table tr td img{
+        transition: transform 1s;
+    }
+    .products table tr td img:hover{
+        transform: scale(1.1);
+        cursor: zoom-in;
+    }
+    #more{
+        text-align: center;
+    }
+    #more table{
+        text-align: center;
+
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 9rem;
+    
+
+    }
+   
+    #more table tr td{
+        padding-right: 5rem;
+    }
+    #more table tr td i:hover{
+        animation: shake 0.5s;
+  animation-iteration-count: infinite;
+  cursor:pointer;
+}
+    
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+    .footer{
+        
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: grey;
+    }
+    .logo{
+    width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 33%;
+    border: 2px solid red;
+    border-radius: 80px;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top:0;
+    cursor: pointer;
+}
+
+.nav-list{
+    width: 70%;
+    background-color: rgb(6, 83, 83);
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li{
+    color: white;
+    list-style: none;
+    padding: 23px;
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: red;
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.rightNav{
+    background-color: lightcyan;
+    text-align: right;
+    width: 40%;
+    /* padding:0 5rem; */
+}
+.rightNav button{
+    font-size: 1.2rem;
+}
+.rightNav .btn{
+    margin: 1rem;
+    background-color: green;
+    padding: 0.5rem;
+}
+
+#search{
+    background-color: pink;
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHCoKReEWUGvg_qs9gSMk2NcpPrspqY1HQFcgUxSXjJIZjshDNAj1Bue3JjXhU95wufno&usqp=CAU");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-blend-mode: rgb(23, 23, 23); */
+}
+</style>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+          <div class="logo"><img src="img/img.jpg" alt="logo"></div>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="https://www.instagram.com/artistdaminiraj/">Gallery</a></li>
+          <li><a href="business.html">Business with Us</a></li>
+    
+          <li><a href="contact.html">Contact Us</a></li>  
+    
+        </ul>
+        <div class="rightNav">
+            <input type="text" name="search" id="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <button class="btn" type="submit"><i class="fa fa-shopping-cart"></i> </button>
+          </div>
+         </nav>
+    <div class="awards"><img width="1080 rem" height="300 rem" src="https://mitticool.com/wp-content/uploads/2021/03/mitticool-in-numbers.jpg"></div>
+    <h1>Handmade personalized product</h1><hr>
+    <div class="video">
+        <iframe style=" display: block; margin: 0 auto;" width="760" height="415" src="https://www.youtube.com/embed/AToqm38W8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="products">
+        <h1>Our Listed Products</h1><hr><br>
+        <table>
+            <tr>
+                <td><div class="img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzKdAeFTOYIXQPlbBa316YVu-gNToeVQdcrw&usqp=CAU">
+                    <h3>Graphite work</h3>
+                </div></td>
+                <td><div class="img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvIJytYuEqzO225MxAQt_Lhci29jsC6omkRA&usqp=CAU">
+                <h3>Color pencil work</h3></div>
+                </td>
+                <td><div class="img3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjjfj6TFtL0tmveU0NBaQdsmsWP-QXEUIgA&usqp=CAU">
+                <h3>Water-color work</h3></div>
+                </td>
+                <td><div class="img4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43uwltEzL4ONX5X7eLhuNQ5yiK4KgCFA_uw&usqp=CAU">
+                <h3>Charcoal work</h3></div></td>
+                <td><div class="img5"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwSLYrvHNYueeeDE8prWiwh-H7WK9wJHmbAQ&usqp=CAU">
+                <h3>Oil work</h3></div></td>
+            </tr>
+        </table>
+        
+        
+    </div>
+    <div id="more">
+        <table>
+            <tr>
+                <td>
+                    <i class="fa fa-truck" style="font-size:2rem;"></i>
+                    <h2>All India Shipping</h2>
+                    <p>Get products at your doorstep</p>
+
+                </td>
+                <td><i class="fa fa-headphones" style="font-size:2rem"></i>
+                <h2>Customer Support</h2>
+                <p>Support 24/7</p>
+               </td>
+               <td>
+                <i class="fa fa-credit-card" aria-hidden="true" style="font-size:2rem"></i>
+                <h2>Payments</h2>
+                <p>Secure payments</p>
+               </td>
+            </tr>
+        </table>
+    </div>
+    <div class="footer">
+        
+            <p>&copy 2022 Mitticool - All rights reserved</p>
+            <img src="https://mitticool.com/wp-content/uploads/2018/11/payment-icons.png">
+    
+        
+    </div>
+    
+</body>
+</html>
