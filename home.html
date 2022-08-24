@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'>
+    </script>
+    
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
@@ -71,11 +73,12 @@
         justify-content: space-between;
         background-color: grey;
     }
+    
     .logo{
     width:20%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
 }
 .logo img{
     width: 33%;
@@ -90,6 +93,8 @@
     justify-content: center;
     position: sticky;
     top:0;
+    margin: 0;
+    z-index:4;
     cursor: pointer;
 }
 
@@ -98,17 +103,19 @@
     background-color: rgb(6, 83, 83);
     display: flex;
     align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .nav-list li{
     color: white;
     list-style: none;
-    padding: 23px;
+    padding: 1.3rem;
 }
 
 .nav-list li a:hover{
     text-decoration: none;
-    color: red;
+    color: aqua;
 
 }
 
@@ -127,19 +134,21 @@
 }
 .rightNav button{
     font-size: 1.2rem;
+    border-radius: 1rem;
 }
 .rightNav .btn{
     margin: 1rem;
     background-color: green;
     padding: 0.5rem;
+    border-radius: 1rem;
 }
 
 #search{
     background-color: pink;
-    padding: 5px;
+    padding: 0.5rem;
     font-size: 17px;
     border: 2px solid grey;
-    border-radius: 9px;
+    border-radius: 1rem;
 }
 
 .background{
@@ -154,7 +163,7 @@
         <ul class="nav-list">
           <div class="logo"><img src="img/img.jpg" alt="logo"></div>
           <li><a href="home.html">Home</a></li>
-          <li><a href="#about">About Us</a></li>
+          <li><a href="about.html">About Us</a></li>
           <li><a href="https://www.instagram.com/artistdaminiraj/">Gallery</a></li>
           <li><a href="business.html">Business with Us</a></li>
     
@@ -166,7 +175,8 @@
             <button type="submit"><i class="fa fa-search"></i></button>
             <button class="btn" type="submit"><i class="fa fa-shopping-cart"></i> </button>
           </div>
-         </nav>
+    </nav>
+    
     <div class="awards"><img width="1080 rem" height="300 rem" src="https://mitticool.com/wp-content/uploads/2021/03/mitticool-in-numbers.jpg"></div>
     <h1>Handmade personalized product</h1><hr><br>
     <div class="video">
@@ -183,7 +193,9 @@
                 <h3>Color pencil work</h3></div>
                 </td>
                 <td><div class="img3"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjjfj6TFtL0tmveU0NBaQdsmsWP-QXEUIgA&usqp=CAU">
-                <h3>Water-color work</h3></div>
+                <h3>Water-color work</h3>
+                
+            </div>
                 </td>
                 <td><div class="img4"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR43uwltEzL4ONX5X7eLhuNQ5yiK4KgCFA_uw&usqp=CAU">
                 <h3>Charcoal work</h3></div></td>
@@ -222,6 +234,8 @@
     
         
     </div>
+    <script src="js.js"></script>
+
     
 </body>
 </html>

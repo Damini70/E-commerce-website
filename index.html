@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <title>Platform for Artlover</title>
+ 
 
 </head>
 <body>
   
-  <nav class="navbar h-nav-resp" >
-    <ul class="nav-list  v-class-resp">
+  <nav class="navbar" >
+    
+    <ul class="nav-list">
       <div class="logo"><img src="img/img.jpg" alt="logo"></div>
       <li><a href="home.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
@@ -21,16 +24,19 @@
       <li><a href="contact.html">Contact Us</a></li>  
 
     </ul>
-    <div class="rightNav v-class-resp">
-        <input type="text" name="search" id="search">
+
+    <div class="rightNav">
+        <div class="bar">
+          <i class="fa fa-bars"></i>
+        </div>
+        <div class="search">
+           <input type="text" name="search" id="search">
         <button type="submit"><i class="fa fa-search"></i></button>
         <button class="btn" type="submit"><i class="fa fa-shopping-cart"></i> </button>
+        </div>
+       
       </div>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
+     
      </nav>
     
 
@@ -38,15 +44,14 @@
         <div class="box-main">
           <div class="firstHalf">
              <p class="text-big">Hurry! Artlovers</p>
-             <p class="text-small">All type of artworks present here.If you coudnt find your favorite feel free to contact us.You can also watch our work by clicking this button. This is the
-              future of the artworld and we are proud to say that.
+             <p class="text-small">All type of artworks present here.If you coudnt find your favorite feel free to contact us.You can also watch our work by clicking this button. This is the future of the artworld and we are proud to say that.
               
              </p>
              <!-- <p class="text-small">If u couldn't find ur favorite feel free to contact us. this is the -->
               <!-- future of the artworld and we r proud to say that.</p>  -->
             <div class="buttons">
                 <button class="btn"><a href="https://www.youtube.com/channel/UCZecTI_wigFtHXO10ipcGXA">Watch Video</a></button>
-                <button class="btn">Connect With Us</button>
+                <button class="btn"><a href="https://www.youtube.com/channel/UCZecTI_wigFtHXO10ipcGXA">Connect With Us</a></button>
             </div>          
             </div>
           <div class="secondHalf">
@@ -59,29 +64,38 @@
           <h1>Our Works</h1><hr>
         </div>
 
-        <div id="collection">
-         
-          <table>
-            <tr>
-              <td><img src="img\@artistdaminiraj (4).png" width="90%"></td>
-              <td> <img src="https://scontent-ccu1-1.xx.fbcdn.net/v/t39.30808-6/225987661_3022328524665070_1614509698667422370_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=e3f864&_nc_ohc=1XBQytTFnJ0AX_QTFYc&_nc_ht=scontent-ccu1-1.xx&oh=00_AT_I3xtGBSdRQ1Box3IPwePltgPvwLPqAfSmVc9sOtVUVg&oe=62EBDF0B" width="95%"></td>
-              <td> <img src="img\@artistdaminiraj (5) .png" width="90%"></td>
+        <div id="collection">          
+          <div class="image">
+            <div class="con1"><img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJ9J-0K87mmKCtU3sdORnpEKRdBa4Ct2BxCg&usqp=CAU">
+              <div class="over1">Price - 11$</div>
+              <button>Add to cart</button>
+            </div>
+            <div class="container2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYKFBctdx0gcbn-Z7Tf7dDLJJ6RXn6jqivRA&usqp=CAU">
+            <div class="overlay2">Price - 20$</div>
+            <button>Add to cart</button>
+          </div>
+            
+            <div class="container2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8jwoYAIUMp_vUpGfREdKU2ytfsL67co5c6w&usqp=CAU">
+              <div class="overlay3">Price - 12$</div>
+              <button>Add to cart</button>
+            </div>
+            <!-- <div class="con2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3TAEFavWvdbD6YJaP4fOPAimrllcX8WwReA&usqp=CAU">
+              <div class="over2">Price - 10$</div>
+            </div> -->
+          </div>
+             
+
               
-            </tr>
-          </table><br><br><hr><br><br>
-            <table><tr>
-              <td><img src="img\204255995_2995065644058025_6082964253729402747.jpg" width="90%" height="60%"></td>
-              <td><img src="img\179804119_2954228391475084_4732899321030108518.jpg" width="93%"></td>
-              <td><img src="img\img_1.jpg" width="92%"></td>
-            </tr></table>
+           <br><br><hr><br><br>
+            
             
          </div><br><br><br><br>
          <div class="subs">
             <h1>Subscribe to our <strong>youtube</strong> channel</h1><br><hr><br><br><br>
             <div class="i">
-              <iframe width="30%" height="90%" src="https://www.youtube.com/embed/DbsFb37TXXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="30%" height="90%" src="https://www.youtube.com/embed/9yIZO5w0eBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <iframe width="30%" height="90%" src="https://www.youtube.com/embed/AToqm38W8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="26%" height="90%" src="https://www.youtube.com/embed/DbsFb37TXXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="26%" height="90%" src="https://www.youtube.com/embed/9yIZO5w0eBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe width="26%" height="90%" src="https://www.youtube.com/embed/AToqm38W8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               
               
             </div>
@@ -103,7 +117,7 @@
           
          </div><br><br><hr><br><br><br><br>
          <div class="footer1">
-          <img src="img\img_1.jpg" width="15%">
+          <img src="img\img_1.jpg" width="10%">
           <table>
             
             <tr>
@@ -133,5 +147,6 @@
           <p>&copy 2022 Mitticool - All rights reserved</p>
           <img src="https://mitticool.com/wp-content/uploads/2018/11/payment-icons.png">
        </div>
+       <script src="js.js"></script>
 </body>
 </html>
