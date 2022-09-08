@@ -21,16 +21,7 @@
         margin: 2rem;
         margin-left: 7rem;
     }
-    .products table{
-        border-spacing: 2rem;
-    }
-    .products table tr td img{
-        transition: transform 1s;
-    }
-    .products table tr td img:hover{
-        transform: scale(1.1);
-        cursor: zoom-in;
-    }
+   
     #more{
         text-align: center;
     }
@@ -48,24 +39,11 @@
         padding-right: 5rem;
     }
     #more table tr td i:hover{
-        animation: shake 0.5s;
-  animation-iteration-count: infinite;
+        
   cursor:pointer;
 }
     
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
+
     .footer{
         
         padding: 1rem;
@@ -103,14 +81,14 @@
     background-color: rgb(6, 83, 83);
     display: flex;
     align-items: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 1rem;
 }
 
 .nav-list li{
     color: white;
     list-style: none;
-    padding: 1.3rem;
+    padding: 0.7rem;
 }
 
 .nav-list li a:hover{
@@ -122,7 +100,7 @@
 .nav-list li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -182,7 +160,7 @@
     <div class="video">
         <iframe style=" display: block; margin: 0 auto;" width="760" height="415" src="https://www.youtube.com/embed/AToqm38W8K8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div><br><br>
-    <div class="products">
+    <!-- <div class="products">
         <h1>Our Listed Products</h1><hr><br>
         <table>
             <tr>
@@ -205,7 +183,7 @@
         </table>
         
         
-    </div>
+    </div> -->
     <div id="more">
         <table>
             <tr>

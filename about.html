@@ -5,22 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ce4133667f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
-            background-color: azure;
+            background-color: peru;
             letter-spacing: 0.01rem;
             margin:0;
             padding: 0;
 
         }
-        .logo{
+        .btn{
+    padding: 0.6rem;
+    margin: 7px 0;
+
+    border-radius: 8px;
+    background: aliceblue;
+    color: rgb(5, 5, 51);
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: aqua;
+}
+.logo{
     width:20%;
     display: flex;
     justify-content: center;
-    
+    align-items: center;
 }
 .logo img{
     width: 33%;
@@ -31,41 +45,42 @@
 
 .navbar{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: sticky;
-    top:0;
-    margin: 0;
-    z-index:4;
+    box-sizing: border-box;
+    top: 0;
+    position: fixed;
+    z-index: 4;
+    
     cursor: pointer;
 }
 
 .nav-list{
     width: 70%;
+    padding-top:0;
+    height: 30%;
     background-color: rgb(6, 83, 83);
     display: flex;
-    align-items: center;
     margin-top:0;
-    padding: 1rem;
-    border-radius: 1rem;
+  
 }
 
 .nav-list li{
     color: white;
     list-style: none;
+    justify-content: space-around;
     padding: 1rem;
 }
 
 .nav-list li a:hover{
     text-decoration: none;
     color: aqua;
+    
 
 }
 
 .nav-list li a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -74,24 +89,45 @@
     text-align: right;
     width: 40%;
     border-radius: 1rem;
+    margin-top:0;
+    /* padding: 0.1rem; */
+    height: 17%;
 }
 .rightNav button{
-    font-size: 1.2rem;
-    border-radius: 1.2rem;
+    font-size: 0.7rem;
+    border-radius: 1rem;
 }
 .rightNav .btn{
     margin: 1rem;
     background-color: green;
-    padding: 0.6rem;
+}
+.rightNav i:hover{
+    cursor: pointer;
+}
+#search{
+
+    background-color: pink;
+    padding: auto;
+    width: 40%;
+    
+    border: 0.2rem solid grey;
     border-radius: 1rem;
 }
+.btn{
+    padding: 0.4rem;
+    margin: 7px 0;
 
-#search{
-    background-color: pink;
-    padding: 0.5rem;
-    font-size: 17px;
-    border: 2px solid grey;
-    border-radius: 1rem;
+    border-radius: 8px;
+    background: aliceblue;
+    color: rgb(5, 5, 51);
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+    color: aqua;
+}
+.bar{
+    display: none;
 }
         .con{
             margin: 2rem;
@@ -104,13 +140,51 @@
         .con img{
             text-align: center;
         }
+         @media only screen and (max-width: 570px){
+
+.nav-list{
+    flex-direction: column;
+    
+    display:none;
+
+} 
+.nav-list li{
+    background-color:green;
+}
+.rightNav{
+    padding: 0.3rem;
+    display:flex;
+    justify-content: space-between;
+    width: auto
+}
+.bar{
+        display: block;
+        font-size: 1.2rem;
+        top:0;
+        right:0;
+        margin: 0.3rem;
+    
+    }
+    #search{
+        padding: 0.1rem;
+    height: 5%;
+    }
+    .rightNav{
+        height: 17%;
+        align-items: center;
+    }
+    #btn1{
+        margin:auto;
+    }
+
+         }
     </style>
 </head>
 <body>
     <nav class="navbar">
         <ul class="nav-list">
           <div class="logo"><img src="img/img.jpg" alt="logo"></div>
-          <li><a href="home.html">Home</a></li>
+         
           <li><a href="about.html">About Us</a></li>
           <li><a href="https://www.instagram.com/artistdaminiraj/">Gallery</a></li>
           <li><a href="business.html">Business with Us</a></li>
@@ -119,11 +193,14 @@
     
         </ul>
         <div class="rightNav">
-            <input type="text" name="search" id="search">
-            <button type="submit"><i class="fa fa-search"></i></button>
-            <button class="btn" type="submit"><i class="fa fa-shopping-cart"></i> </button>
+            <div class="bar">
+                <i class="fa fa-bars"></i>
+              </div>
+            <input type="text" id="search">
+            <button id="btn1" type="search"><i class="fa fa-search"></i></button>
+            <button class="btn" type="search"><i class="fa fa-shopping-cart"></i> </button>
           </div>
-    </nav>
+    </nav><br><br>
     <div class="con">
         <h1>Keeping traditional art alive</h1><hr><br><br>
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsyudM3zrF9DkJ2LlA3ZJWkh4pIvjCZAiDvQ&usqp=CAU" width="60%">
@@ -131,5 +208,13 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrE44VPiacyK0SAMW_b9HTjHtefsK2L21Bcw&usqp=CAU" width="60%"><br>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem, nulla animi. Facilis harum doloremque beatae recusandae, illum aperiam aut deserunt ea animi, quisquam corporis explicabo velit, cupiditate commodi officia temporibus possimus voluptate! Rem facere unde sit nostrum eaque consequatur deserunt.</p>
     </div>
+    <script>
+  $(document).ready(function(){
+    $(".bar").click(function(){
+        $(".nav-list").toggle();
+        // console.log("ajwbff");
+    })
+})
+    </script>
 </body>
 </html>

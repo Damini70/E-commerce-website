@@ -1,10 +1,16 @@
+html {
+    scroll-behavior: smooth;
+  }
 *{
     /* font-family: Arial, Helvetica, sans-serif; */
     margin: 0;
     padding:0;
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
 
     /* background-color: rgb(44, 37, 37); */
+}
+h2{
+    text-align: center;
 }
 
 /* Navbar */
@@ -84,7 +90,7 @@
 #search{
 
     background-color: pink;
-    padding: 0.3rem;
+    padding: auto;
     width: 40%;
     
     border: 0.2rem solid grey;
@@ -161,7 +167,7 @@
     font-weight: bold;
 }
 .btn{
-    padding: 8px 20px;
+    padding: 0.6rem;
     margin: 7px 0;
 
     border-radius: 8px;
@@ -325,12 +331,8 @@
 
 
 
-.subs .i iframe{
-   padding: 2rem;
-}
-.subs h1{
-    text-align: center;
-}npx create
+
+
 .featured{
     text-align: center;
 } 
@@ -360,7 +362,7 @@
     margin-left: 3rem;
     display: flex;
     padding-bottom: 3rem;
-    justify-content: space-between;
+    justify-content: space-around;
 
 }
 .footer1 img{
@@ -427,7 +429,7 @@
     }
     .bar{
         display: block;
-        font-size: 1.7rem;
+        font-size: 1.2rem;
         top:0;
         right:0;
         margin-left: 3rem;
