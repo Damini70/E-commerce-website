@@ -339,6 +339,10 @@ h2{
 .featured .all table{
     padding-left: 3.5rem;
 }
+.all table{
+    margin-left: auto;
+    margin-right: auto;
+}
 .featured .all table tr td{
     padding: 2rem;
 }
